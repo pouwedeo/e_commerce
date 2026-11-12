@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: bronze
+    database: ecommerce_db
+    schema: ecommerce_sch
+    tables:
+      - name: CATEGORY
+
+      - name: CUSTOMER
+
+      - name: DETAIL_SALE
+
+      - name: PRODUCT
+
+      - name: SALE
+
+      - name: SUB_CATEGORY
+
+      - name: TYPE_CUSTOMER
