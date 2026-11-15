@@ -42,7 +42,7 @@ models:
       +schema: gold
 
 seeds:
-  ecommerce:
+  e_commerce:
     file_zone_geographique:
       +delimiter: "|"
 
