@@ -2,7 +2,7 @@ version: 2
 sources:
   - name: bronze
     database: ecommerce_db
-    schema: ecommerce_sch
+    schema: ecommerce_sh
     tables:
       - name: CATEGORY
 

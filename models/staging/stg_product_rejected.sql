@@ -4,7 +4,7 @@
         UNIQUE_KEY   = 'rejection_id'
     )
 }}
-select dbt_utils.generate_surrogate_key(['cd_product', 'lib_product', 'price_product', 'cd_subcategory']) as rejction_id,
+select {{dbt_utils.generate_surrogate_key(['cd_product', 'lib_product', 'price_product', 'cd_subcategory'])}} as rejction_id,
      cd_product, lib_product, price_product, cd_subcategory,
        convert_timezone('Europe/Paris', current_timestamp()) as rejected_at,
        case
