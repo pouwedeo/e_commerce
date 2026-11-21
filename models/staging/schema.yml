@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  -name: stg_category
+  description: "data cleaned from table bronze"
+  columns:
+    -name: cd_category
+    description: "category code"
+    -name: lib_category
+    description: "product category labelle"
+  
+  -name: stg_category_rejected
+  description: "Category data rejected"
+  columns: 
+    -name: rejection_id
+    description: "Rejection category id"
+    -name: cd_category
+    description: "category code"
+    -name: lib_category
+    description: "product category labelle"
+    -name: rejected_at
+    description: "Time of rejection"
+    -name: reject_reason
+    description: "Rejection category reason"
